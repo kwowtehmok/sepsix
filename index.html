@@ -14,33 +14,20 @@
             font-size: 18px;
             background-color: #DAA520; /* Goldenrod */
             text-align: center;
-            overflow: hidden;  /* Hide overflow for floating images */
         }
 
         .photos {
-            position: relative;
-            width: 100%;
-            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 16px;
+            padding: 16px;
         }
 
         .photos img {
-            position: absolute;
             border-radius: 15px;
             box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-            max-width: 150px;
-            animation: float 30s infinite ease-in-out, drift 30s infinite linear;
-        }
-
-        /* Float animation */
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-
-        /* Drift animation */
-        @keyframes drift {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(100%); }
+            max-width: 100%;
+            height: auto;
         }
 
         /* Other styles... */
@@ -53,43 +40,43 @@
         <marquee behavior="scroll" direction="left" scrollamount="10"><h1>🍁 Juju's 43rd Birthday 🍂</h1></marquee>
         <p class="emoji">🎂 Celebrating a special day 🍰</p>
     </div>
-    
+
     <div class="intro-text">
         <p>Hey Juju, even though paths may change as life goes on, today is a day to celebrate you. Cheers to 43 years of wonderful experiences and many more to come. 🍾</p>
     </div>
 
     <div class="photos">
         <!-- All 30 photos -->
-        <img src="juju1.jpg" alt="Juju's photo 1" style="left: 1%; top: 2%;">
-        <img src="juju2.jpg" alt="Juju's photo 2" style="left: 4%; top: 10%;">
-        <img src="juju3.jpg" alt="Juju's photo 3" style="left: 8%; top: 15%;">
-        <img src="juju4.jpg" alt="Juju's photo 4" style="left: 10%; top: 5%;">
-        <img src="juju5.jpg" alt="Juju's photo 5" style="left: 14%; top: 18%;">
-        <img src="juju6.jpg" alt="Juju's photo 6" style="left: 17%; top: 25%;">
-        <img src="juju7.jpg" alt="Juju's photo 7" style="left: 22%; top: 30%;">
-        <img src="juju8.jpg" alt="Juju's photo 8" style="left: 25%; top: 35%;">
-        <img src="juju9.jpg" alt="Juju's photo 9" style="left: 28%; top: 40%;">
-        <img src="juju10.jpg" alt="Juju's photo 10" style="left: 32%; top: 45%;">
-        <img src="juju11.jpg" alt="Juju's photo 11" style="left: 35%; top: 50%;">
-        <img src="juju12.jpg" alt="Juju's photo 12" style="left: 40%; top: 55%;">
-        <img src="juju13.jpg" alt="Juju's photo 13" style="left: 42%; top: 60%;">
-        <img src="juju14.jpg" alt="Juju's photo 14" style="left: 45%; top: 65%;">
-        <img src="juju15.jpg" alt="Juju's photo 15" style="left: 50%; top: 70%;">
-        <img src="juju16.jpg" alt="Juju's photo 16" style="left: 52%; top: 75%;">
-        <img src="juju17.jpg" alt="Juju's photo 17" style="left: 55%; top: 5%;">
-        <img src="juju18.jpg" alt="Juju's photo 18" style="left: 60%; top: 10%;">
-        <img src="juju19.jpg" alt="Juju's photo 19" style="left: 62%; top: 15%;">
-        <img src="juju20.jpg" alt="Juju's photo 20" style="left: 65%; top: 20%;">
-        <img src="juju21.jpg" alt="Juju's photo 21" style="left: 68%; top: 25%;">
-        <img src="juju22.jpg" alt="Juju's photo 22" style="left: 70%; top: 30%;">
-        <img src="juju23.jpg" alt="Juju's photo 23" style="left: 72%; top: 35%;">
-        <img src="juju24.jpg" alt="Juju's photo 24" style="left: 75%; top: 40%;">
-        <img src="juju25.jpg" alt="Juju's photo 25" style="left: 78%; top: 45%;">
-        <img src="juju26.jpg" alt="Juju's photo 26" style="left: 80%; top: 50%;">
-        <img src="juju27.jpg" alt="Juju's photo 27" style="left: 82%; top: 55%;">
-        <img src="juju28.jpg" alt="Juju's photo 28" style="left: 85%; top: 60%;">
-        <img src="juju29.jpg" alt="Juju's photo 29" style="left: 88%; top: 65%;">
-        <img src="juju30.jpg" alt="Juju's photo 30" style="left: 90%; top: 70%;">
+        <img src="juju1.jpg" alt="Juju's photo 1">
+        <img src="juju2.jpg" alt="Juju's photo 2">
+        <img src="juju3.jpg" alt="Juju's photo 3">
+        <img src="juju4.jpg" alt="Juju's photo 4">
+        <img src="juju5.jpg" alt="Juju's photo 5">
+        <img src="juju6.jpg" alt="Juju's photo 6">
+        <img src="juju7.jpg" alt="Juju's photo 7">
+        <img src="juju8.jpg" alt="Juju's photo 8">
+        <img src="juju9.jpg" alt="Juju's photo 9">
+        <img src="juju10.jpg" alt="Juju's photo 10">
+        <img src="juju11.jpg" alt="Juju's photo 11">
+        <img src="juju12.jpg" alt="Juju's photo 12">
+        <img src="juju13.jpg" alt="Juju's photo 13">
+        <img src="juju14.jpg" alt="Juju's photo 14">
+        <img src="juju15.jpg" alt="Juju's photo 15">
+        <img src="juju16.jpg" alt="Juju's photo 16">
+        <img src="juju17.jpg" alt="Juju's photo 17">
+        <img src="juju18.jpg" alt="Juju's photo 18">
+        <img src="juju19.jpg" alt="Juju's photo 19">
+        <img src="juju20.jpg" alt="Juju's photo 20">
+        <img src="juju21.jpg" alt="Juju's photo 21">
+        <img src="juju22.jpg" alt="Juju's photo 22">
+        <img src="juju23.jpg" alt="Juju's photo 23">
+        <img src="juju24.jpg" alt="Juju's photo 24">
+        <img src="juju25.jpg" alt="Juju's photo 25">
+        <img src="juju26.jpg" alt="Juju's photo 26">
+        <img src="juju27.jpg" alt="Juju's photo 27">
+        <img src="juju28.jpg" alt="Juju's photo 28">
+        <img src="juju29.jpg" alt="Juju's photo 29">
+        <img src="juju30.jpg" alt="Juju's photo 30">
     </div>
 
     <div class="footer">
