@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message for Judith</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Baloo Tammudu 2', cursive;
+            font-size: 18px;
+            background-color: #DAA520; /* Goldenrod */
+            text-align: center;
+        }
+        /* ... Other styles ... */
+
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="banner">
+        <marquee behavior="scroll" direction="left" scrollamount="10"><h1>🍁 Judith's 43rd Birthday 🍂</h1></marquee>
+        <p class="emoji">🎂 Celebrating a special day 🍰</p>
+    </div>
+    
+    <div class="intro-text">
+        <p>Hey Judith, even though paths may change as life goes on, today is a day to celebrate you. Cheers to 43 years of wonderful experiences and many more to come. 🍾</p>
+    </div>
+
+    <div class="photos">
+        <img src="judith-photo1.jpg" alt="Judith's photo 1">
+        <img src="judith-photo2.jpg" alt="Judith's photo 2">
+        <img src="judith-photo3.jpg" alt="Judith's photo 3">
+    </div>
+
+    <div class="footer">
+        <p>From the co-parent of your wonderful children, here's to laughter, wisdom, and another incredible year ahead! Happy 43rd, Judith! 🥳🎁</p>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+        <h2>And here's a special song for you!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UVMBSUVG20c?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 200,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#8B4513" /* SaddleBrown */
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "bottom",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+
+</html>
 
