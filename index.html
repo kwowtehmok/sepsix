@@ -52,7 +52,29 @@
             border-top: 5px dashed #D2691E; /* Chocolate */
         }
 
-        /* Your modal and other CSS remain unchanged */
+        /* Mosaic Grid */
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 200px;
+            gap: 16px;
+            padding: 20px;
+            background-color: rgba(210, 105, 30, 0.8); /* Chocolate */
+        }
+
+        .photos img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px #000;
+            cursor: pointer;
+            transition: transform .2s ease-in-out;
+        }
+
+        .photos img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -68,6 +90,7 @@
         <p>Hey Juju, even though life has its seasons, your essence is as beautiful as an endless autumn. Happy 43rd Birthday! 🍂</p>
     </div>
 
+    <!-- Photos section -->
    <div class="photos">
     <!-- Image 1 -->
     <img id="img1" src="juju1.jpg" alt="Juju's photo 1" onclick="openModal(this.id)">
@@ -141,8 +164,7 @@
         <p>May this autumn season bring you countless blessings, just as you have been a blessing to our lives. Happy Birthday, Juju! 🍁🎁</p>
     </div>
 
-
-        <script>
+    <script>
         function openModal(imgId) {
             var modal = document.getElementById("myModal");
             var modalImg = document.getElementById("img01");
@@ -161,7 +183,7 @@
             closeModal();
         }
     </script>
-
 </body>
 
 </html>
+
